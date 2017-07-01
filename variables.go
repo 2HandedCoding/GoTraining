@@ -11,6 +11,7 @@ package main
 
 import "fmt"
 import "time"
+import "math"
 
 // main is the entry point for the application.
 func main() {
@@ -43,8 +44,8 @@ func main() {
 	fmt.Printf("\nThe three variables declared with shorthand initialization are: \n%T: %v\n%T: %v\n%T: %v\n", name2, name2, age2, age2, dob2, dob2)
 
 	// Perform a type conversion.
-	ageFloat := float32(age)
+	piFloat := float32(math.Pi)
 
 	// Display the value of that variable.
-	fmt.Printf("The converted variable is:\n%T: %v\n", ageFloat, ageFloat)
+	fmt.Printf("The converted variable is:\n%T: %v\n", piFloat, piFloat)
 }
